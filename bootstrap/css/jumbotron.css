@@ -1,8 +1,18 @@
-body{
-    padding-top: 50px;
-    padding-bottom: 20px;
+/* Updated jumbotron.css */
+
+/* Define CSS variables for padding and margin */
+:root {
+    --padding-top: 50px;
+    --padding-bottom: 20px;
+    --margin-top: 30px;
 }
 
-#main > :first-child{
-	margin-top: 30px;
+/* Apply CSS variables */
+body {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+
+#main > :first-child {
+    margin-top: var(--margin-top);
 }
